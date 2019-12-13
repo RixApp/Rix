@@ -1,9 +1,7 @@
 require('dotenv').config();
-/* Without CSS Modules, with PostCSS */
-const withSass = require('@zeit/next-sass');
 const withTM = require('next-transpile-modules');
 
-module.exports = withSass(withTM({
+module.exports = withTM({
   sassLoaderOptions: {
       includePaths: ["./src"]
   },
@@ -19,4 +17,4 @@ module.exports = withSass(withTM({
     localServerUrl: '',
     prodServerUrl: '',
   },
-}));
+});
