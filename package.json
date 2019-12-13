@@ -5,7 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p $PORT",
+    "lint": "tslint './src/**/*.ts{,x}'",
+    "clean:build": "rm -rf ./next",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "@types/node": "^12.12.17",
