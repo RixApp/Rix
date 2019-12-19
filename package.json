@@ -1,7 +1,16 @@
 {
   "name": "rix",
-  "version": "0.1.0",
+  "version": "0.0.1",
+  "description": "Rix React/Next.js Open Source Admin Template",
+  "author": "Giovanni Delgado",
+  "homepage": "https://rix-demo.herokuapp.com/",
+  "copyright": "Copyright 2019 Rix Giovanni Delgado <giovanniyatze@gmail.com>",
+  "license": "MIT",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Giovan/Rix"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
