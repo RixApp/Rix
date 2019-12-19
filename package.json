@@ -13,6 +13,7 @@
   "dependencies": {
     "@types/node": "^12.12.17",
     "@types/react": "^16.9.16",
+    "antd": "^3.26.3",
     "dotenv": "^8.2.0",
     "next": "9.1.5",
     "next-transpile-modules": "^2.3.1",
