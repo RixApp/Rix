@@ -29,5 +29,26 @@
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "typescript": "^3.7.3"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 9",
+    "not op_mini all"
+  ],
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!**/*index.js",
+      "!src/serviceWorker.js",
+      "!src/polyfill.js"
+    ]
+  },
+  "engines": {
+    "node": ">=10.10",
+    "npm": ">=6"
   }
 }
