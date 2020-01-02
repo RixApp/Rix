@@ -1,0 +1,37 @@
+@import "../../../theme.less";
+
+.container {
+  position: relative;
+  margin-right: 20px;
+}
+
+.wrapper {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  right: 0;
+}
+
+.editableText {
+  transition: 0.2s ease all;
+  padding: 4px 11px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.editableText:hover {
+  cursor: pointer;
+  position: relative;
+  border-color: #d9d9d9;
+}
+
+.editableText :global(.anticon) {
+  margin-left: 10px;
+  color: @primary-color;
+}
+
+.notEditable {
+  padding: 4px 11px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
