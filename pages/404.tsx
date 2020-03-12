@@ -2,7 +2,7 @@ import * as React from 'react';
 import Link from 'next/link';
 import { NextPage } from 'next';
 
-const Home: NextPage = () => {
+const NotFoundPage: NextPage = () => {
   return (
     <div>
       
@@ -10,8 +10,8 @@ const Home: NextPage = () => {
   )
 }
 
-Home.getInitialProps = async ({ req }) => {
+NotFoundPage.getInitialProps = async ({ req }) => {
   return 1;
 };
 
-export default Home;
+export default NotFoundPage;
