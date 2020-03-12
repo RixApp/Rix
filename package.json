@@ -1,15 +1,58 @@
 {
   "name": "rix",
-  "version": "0.1.0",
+  "version": "0.0.1",
+  "description": "Rix React/Next.js Open Source Admin Template",
+  "author": "Giovanni Delgado",
+  "homepage": "https://rix-demo.herokuapp.com/",
+  "copyright": "Copyright 2019 Rix Giovanni Delgado <giovanniyatze@gmail.com>",
+  "license": "MIT",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Giovan/Rix"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p $PORT",
+    "lint": "tslint './src/**/*.ts{,x}'",
+    "clean:build": "rm -rf ./next",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
+    "@ant-design/dark-theme": "^1.0.3",
+    "@types/node": "^12.12.17",
+    "@types/react": "^16.9.16",
+    "@zeit/next-css": "^1.0.1",
+    "antd": "^3.26.3",
+    "babel-plugin-import": "^1.13.0",
+    "dotenv": "^8.2.0",
     "next": "9.1.5",
+    "next-transpile-modules": "^2.3.1",
+    "null-loader": "^3.0.0",
     "react": "16.12.0",
-    "react-dom": "16.12.0"
+    "react-dom": "16.12.0",
+    "typescript": "^3.7.3"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 9",
+    "not op_mini all"
+  ],
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!**/*index.js",
+      "!src/serviceWorker.js",
+      "!src/polyfill.js"
+    ]
+  },
+  "engines": {
+    "node": ">=10.10",
+    "npm": ">=6"
   }
 }
